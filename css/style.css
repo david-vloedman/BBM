@@ -2,9 +2,7 @@
   border: 1px solid red;
 }
 
-.gridline {
-  border: 1px yellow;
-}
+
 
 body {
   background-image: url('/img/background/woodbackground.jpg');
@@ -24,6 +22,7 @@ main {
   grid-template-rows:  10% 20% auto 10%;
   justify-content: center;
   height: 100vh;
+  
   
 }
 
