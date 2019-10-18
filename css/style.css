@@ -51,11 +51,62 @@ nav{
 
 #responses{
   text-align: center;
+
 }
-
-
 
 #chart{
   width: fit-content;
   height: fit-content;
 }
+
+#logo {
+  width: 100%;
+  height: auto;
+}
+
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Muli', sans-serif;
+  text-align: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+ list-style-type: none;
+} 
+
+.headshot {
+  width: 30%;
+  height: auto;
+  border: 5px solid rgb(0, 0, 0);
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  
+}
+
+form {
+  font-size: 20px;
+}
+
+input[type="submit" i] {
+  border: none;
+  box-shadow: 10px 5px 5px rgb(90, 90, 90);
+  border-radius: .25em;
+  font-size: 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  color: #ffffff;
+  padding: .6em 2.2em;
+  cursor: pointer;
+  background: #008064;
+}
+
