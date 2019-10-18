@@ -7,24 +7,24 @@
 body {
   background-image: url('/img/background/woodbackground.jpg');
 }
-
-
-main {
-  background-color: rgb(255, 255, 255);
-  height: 100vh;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
 #gridContainer {
   display: grid;
   grid-template-columns: 10% auto 10%;
-  grid-template-rows:  10% 20% auto 10%;
-  justify-content: center;
-  height: 100vh;
-  
-  
+  grid-template-rows:  10% 10% auto 10%;
+  justify-content: center;  
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: rgb(255, 255, 255);  
 }
+
+
+img{
+  display: block;
+  max-width: 400px;
+  max-height: 400px;
+}
+
 
 nav{
   grid-row: 1/2;
@@ -41,6 +41,7 @@ nav{
 #content{
   grid-row: 3/4;
   grid-column: 2/3;
+  overflow: inherit;
 }
 
 #footer{
@@ -50,4 +51,11 @@ nav{
 
 #responses{
   text-align: center;
+}
+
+
+
+#chart{
+  width: fit-content;
+  height: fit-content;
 }

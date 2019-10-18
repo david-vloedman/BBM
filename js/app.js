@@ -117,9 +117,9 @@ var renderSetup = function(user){
   opt2.id = 'lager';
   opt3.id = 'dark';
 
-  opt1.class = 'types';
-  opt2.class = 'types';
-  opt3.class = 'types';
+  opt1.className = 'types';
+  opt2.className = 'types';
+  opt3.className = 'types';
 
   var qTarget = document.getElementById('instructions');
   var instructions = document.createElement('h2');
@@ -193,7 +193,7 @@ var displayTooYoung = function(user){
 
 
 var routeEvent = function(event){
-  var id = event.target.class;
+  var id = event.target.className;
   if(id === 'types') beerTypeSelection(event);
   if(id === 'flavors') beerFlavorSelection(event);
 };
@@ -223,10 +223,8 @@ var renderAle = function(){
   warm_malty.id = 'warm_malty';
   warm_malty.type = 'image';
   warm_malty.src = '../img/buttons/warmmaltybtn.jpg';
-
   warm_malty.id = 'warm_malty';
-
-  warm_malty.class = 'flavors';
+  warm_malty.className = 'flavors';
 
 
   var crisp_light = document.createElement('input');
@@ -236,7 +234,7 @@ var renderAle = function(){
 
   crisp_light.id = 'crisp_light';
 
-  crisp_light.class = 'flavors';
+  crisp_light.className = 'flavors';
 
 
   var hoppy = document.createElement('input');
@@ -246,7 +244,7 @@ var renderAle = function(){
 
   hoppy.id = 'hoppy';
 
-  hoppy.class = 'flavors';
+  hoppy.className = 'flavors';
 
 
   var sour = document.createElement('input');
@@ -256,7 +254,7 @@ var renderAle = function(){
 
   sour.id = 'sour';
 
-  sour.class = 'flavors';
+  sour.className = 'flavors';
 
 
   aleFlavorType.appendChild(warm_malty);
@@ -272,6 +270,8 @@ var secondInstructions = function(){
   content.innerHTML = 'Pick a flavor profile...';
   inst.appendChild(content);
 };
+
+
 var renderLager = function(){
   removeChildren();
   var lagerFlavorType = document.getElementById('responses');
@@ -282,7 +282,7 @@ var renderLager = function(){
 
   light_crisp.id = 'light_crisp';
 
-  light_crisp.class = 'flavors';
+  light_crisp.className = 'flavors';
 
 
   var deep_malty = document.createElement('input');
@@ -292,7 +292,7 @@ var renderLager = function(){
 
   deep_malty.id = 'deep_malty';
 
-  deep_malty.class = 'flavors';
+  deep_malty.className = 'flavors';
 
 
   var light_hoppy = document.createElement('input');
@@ -302,7 +302,7 @@ var renderLager = function(){
 
   light_hoppy.id = 'light_hoppy';
 
-  light_hoppy.class = 'flavors';
+  light_hoppy.className = 'flavors';
 
 
   lagerFlavorType.appendChild(light_crisp);
@@ -323,7 +323,7 @@ var renderDark = function(){
   coffee.id = 'coffee';
   
 
-  coffee.class = 'flavors';
+  coffee.className = 'flavors';
 
   var chocolate = document.createElement('input');
   chocolate.id = 'chocolate';
@@ -332,7 +332,7 @@ var renderDark = function(){
   chocolate.id = 'chocolate';
 
 
-  chocolate.class = 'flavors';
+  chocolate.className = 'flavors';
 
   darkFlavorType.appendChild(coffee);
   darkFlavorType.appendChild(chocolate);

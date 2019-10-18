@@ -6,7 +6,11 @@ var renderResults = function(){
   var children = [];
   var result = persistenceManager.getData('beer');
   var target = document.getElementById('results');
-  children.push(document.createElement('img'));
+  var img = document.createElement('img');
+  
+  img.maxHeight = '300px';
+  img.maxWidth = '300x';
+  children.push(img);
   children[0].src = `../${result.imgPath}`;
   children.push(document.createElement('p'));
   children[1].id = 'brand';
@@ -68,7 +72,7 @@ var createDataSet = function(){
     options: {
       legend: {
         labels: {
-          fontSize: 20,
+          fontSize: 14,
         }
       }
     }
@@ -82,10 +86,14 @@ var createDataSet = function(){
 
 
 var createChart = function(){
-  var canvas = document.createElement('canvas');  
+  var target = document.getElementById('results');
+  var canvas = document.createElement('canvas');
+  canvas.maxHeight = '400px';
+  canvas.maxWidth = '400px';
   var chart = new Chart(canvas, createDataSet());
   var target = document.getElementById('results');
   target.appendChild(canvas);
+  
 };
 
 

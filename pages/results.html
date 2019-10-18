@@ -6,42 +6,30 @@
     <!-- <script src="../js/beerdiscriptions.js"></script>
   <script src="../js/app.js"></script> -->
   <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <a id="ResultsHomeButton" href="/index.html">BACK HOME</a>
+  
+  
   <title>Bend Beer Match</title>
 </head>
 <body>
-    <div id="foregroundResult">
-        
-    </div>
-  <main>
-    <header>
-      <h1 id="indexH1">Bend Beer Match</h1>
-    </header>
-    <div id="content">
-      <div id="instructions">
-        <h2>
-          
-        </h2>
-        <p></p>
+  
+    <div id="gridContainer">
+        <nav>
+          <a href="/index.html">Home</a>
+          <a href="./pages/about.html">About Us</a>
+          </nav>
+      <div id="header">
+        <h1>Bend Beer Match</h1>
       </div>
-
-        <div id="user">
-
-          <p>your beer match is...</p>
+      <div id="content">
+        <div id="instructions"></div>
+        <h2>your beer match is...</h2>
+        <div id="results">
+          <canvas id="chart"></canvas>
         </div>
-        <div id="results">       
-          
-        
-        </div>
-       
-
       </div>
-    </div>
-    <footer>
-      
-    </footer>
-  </main>
+      <div id="footer"></div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
   <script src="../js/persistence_history.js"></script>  
   <script src="../js/results.js"></script> 
